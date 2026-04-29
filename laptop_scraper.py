@@ -50,7 +50,7 @@ def find_laptops(html):
         price = "OUT OF STOCK" #when we can't find price it usually means it out of stock on the page
         rating = "N/A"
 
-        if name_el:
+        if name_el:                        #if each one exists format and set
             name = name_el.text.strip() 
         if dollars_el and cents_el:
             price = f"${dollars_el.text.strip()}{cents_el.text.strip()}" 
@@ -62,7 +62,7 @@ def find_laptops(html):
     return laptops
 
 
-def display_laptops(laptops):
+def display_laptops(laptops): 
     if not laptops:
         print("No laptops to display.")
         return
