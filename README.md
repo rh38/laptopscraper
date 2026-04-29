@@ -1,4 +1,4 @@
-Newegg Laptop Scraper
+### Newegg Laptop Scraper
 
 ## Description:
 
